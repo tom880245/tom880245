@@ -1,0 +1,14 @@
+_internal
+123.exe
+1檢查目錄檔名.bat
+1檢查目錄檔名20.bat
+2檢查目錄檔名.bat
+A215_拾參層平面圖.pdf.pdf
+list.txt
+list10.txt
+list20.txt
+list3.txt
+list4.txt
+list5.txt
+replace
+測試

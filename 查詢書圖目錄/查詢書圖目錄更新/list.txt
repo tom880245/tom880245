@@ -1,0 +1,4 @@
+.ipynb_checkpoints
+1檢查目錄檔名.bat
+2查詢list有沒有該檔案_新版.ipynb
+list.txt

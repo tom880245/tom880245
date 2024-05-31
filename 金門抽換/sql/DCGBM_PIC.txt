@@ -1,0 +1,113 @@
+
+update  bdmlist_reg set  reedit_date='1120905' where index_key like '1111111100151-00432' and picnum in('A102')
+
+新增圖說
+
+D11203150078
+D11203150126
+D11203150081
+D11203150118
+D11106270010
+
+http://192.168.1.174:8140/decbmPush/downloadFromGuid/9ae96a4b-9d97-40b8-abd0-3c9bae8ae063   =>D11106270010
+
+update pubregt set casestat ='12'where decid = 'D11106270010' and casestat ='9'
+
+select * from bdmlist_reg  where index_key like '1120320120527-00465'  order by picseq desc
+
+
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1120320120527-00465' and rownum=1),'1120320120527-00465',(select max(picseq)+1 from bdmlist_reg  where index_key like '1120320120527-00465'),'新增圖說','A003','A003.pdf','1120711')
+
+
+
+利用這個網址取得 guid，    https://building.cpami.gov.tw/decbm/api/getcasestate?decid=D11009230086  網址最後是檢查登記碼，自己換掉
+
+ http://192.168.1.174:8140/decbmPush/downloadFromGuid/18a214f3-bbfd-4f8f-bb1b-3d2d1454560f
+
+
+
+下載完之後，看這裡的 casestat 是多少，要進資料庫去執行  update pubregt set casestat =  xxx where decid = 檢查登記碼
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1120224143025-00375' and rownum=1),'1120224143025-00375',(select max(picseq)+1 from bdmlist_reg  where index_key like '1120224143025-00375'),'新增圖說','A1-10-1','A1-10-1.pdf','1130102')
+
+SELECT *  FROM BDMPARM WHERE SYSID LIKE 'LIC%' 
+
+insert into  BDMPARM(sysid,prjyy,prjtyp,picpath,bmpas)  VALUES('LIC116','116','LIC','\\192.168.6.235\PIC\LIC\116\','C20');
+
+SELECT *  FROM BDMPARM WHERE SYSID LIKE 'AUD%'  ORDER BY PRJYY DESC
+
+
+-----------------------------------------------------------------------------------------------
+
+0313
+
+1.
+update  bdmlist_reg set  reedit_date='1130319' where index_key like '1110923174731-00441' and picnum in('A0-01', 'A0-02', 'A0-03', 'A0-04', 'A0-05', 'A0-08', 'A0-09', 'A0-10', 'A0-11', 'A1-01', 'A1-02', 'A1-03', 'A1-04', 'A1-05', 'A1-06', 'A1-07', 'A1-08', 'A1-09', 'A1-10', 'A2-01', 'A2-02', 'A2-03', 'A9-02');
+
+2.
+
+update  bdmlist_reg set  reedit_date='1130313' where index_key like '1120905135647-01108' and picnum in('A1-11', 'S1-01');
+
+
+3
+update  bdmlist_reg set  reedit_date='1130313' where index_key like '1120821112030-00304' and picnum in('A002', 'S101', 'S103', 'S104', 'S105');
+
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1120821112030-00304' and rownum=1),'1120821112030-00304',(select max(picseq)+1 from bdmlist_reg  where index_key like '1120821112030-00304'),'新增圖說','19-03','19-03.pdf','1130313');
+
+
+4.
+update  bdmlist_reg set  reedit_date='1130313' where index_key like '1120814115520-00187' and picnum in('54-01', 'A1-01', 'A2-01', 'A5-01');
+
+5.
+update  bdmlist_reg set  reedit_date='1130313' where index_key like '1121121161308-00221' and picnum in('54-01');
+
+6.
+update  bdmlist_reg set  reedit_date='1130313' where index_key like '1120809104932-00959' and picnum in('54-01');
+
+7.
+update  bdmlist_reg set  reedit_date='1130313' where index_key like '1121117101513-01520' and picnum in('54-01');
+
+8.
+update  bdmlist_reg set  reedit_date='1130313' where index_key like '1121206091909-00446' and picnum in('54-01', 'S101', 'S102');
+
+
+
+
+
+
+update  bdmlist_reg set  reedit_date='1130102' where index_key like '1120830113522-01272' and picnum in('08-01', '54-01')
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1120830113522-01272' and rownum=1),'1120830113522-01272',(select max(picseq)+1 from bdmlist_reg  where index_key like '1120830113522-01272'),'新增圖說','S105','S105.pdf','1130102')
+
+
+4.
+
+update  bdmlist_reg set  reedit_date='1130102' where index_key like '1120224143025-00375' and picnum in('A0-01', 'A0-03', 'A0-05', 'A0-06', 'A0-07', 'A0-08', 'A1-01', 'A1-02', 'A1-03', 'A1-09', 'A1-10', 'A1-11', 'A3-01', 'A3-02', 'A3-03', 'A9-01')
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1120224143025-00375' and rownum=1),'1120224143025-00375',(select max(picseq)+1 from bdmlist_reg  where index_key like '1120224143025-00375'),'新增圖說','A1-02-1','A1-02-1.pdf','1130102')
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1120224143025-00375' and rownum=1),'1120224143025-00375',(select max(picseq)+1 from bdmlist_reg  where index_key like '1120224143025-00375'),'新增圖說','A1-10-1','A1-10-1.pdf','1130102')
+
+
+5.
+update  bdmlist_reg set  reedit_date='1130102' where index_key like '1120906161456-00464' and picnum in('54-01', 'A2-01', 'A2-02', 'A3-01', 'S1-01')
+
+6.
+
+
+update  bdmlist_reg set  reedit_date='1130102' where index_key like '1120706132654-00792' and picnum in('54-01')
+
+
+7
+update  bdmlist_reg set  reedit_date='1130102' where index_key like '1121004161100-01164' and picnum in('A001', 'A002', 'A101', 'A103', 'A104', 'A105', 'A106', 'A107', 'A108', 'A109', 'A110', 'A111', 'A112', 'A113', 'A201', 'A202', 'A211', 'A212', 'A501', 'A502', 'A503');
+
+
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A905','A905.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A906','A906.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A907','A907.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A908','A908.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A909','A909.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A910','A910.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A911','A911.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A912','A912.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A913','A913.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A914','A914.pdf','1130102');
+insert into  bdmlist_reg(sysid,index_key,picseq,picname,picnum,filename, reedit_date)  VALUES((select sysid from bdmlist_reg  where index_key like '1121004161100-01164' and rownum=1),'1121004161100-01164',(select max(picseq)+1 from bdmlist_reg  where index_key like '1121004161100-01164'),'新增圖說','A915','A915.pdf','1130102');
+8.
+update  bdmlist_reg set  reedit_date='1130102' where index_key like '1121004162222-00467' and picnum in('54-01', 'A108', 'A203')

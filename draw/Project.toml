@@ -1,0 +1,5 @@
+[deps]
+Gumbo = "708ec375-b3d6-5a57-a7ce-8257bf98657a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+Iconv = "f60d2a9e-e6c3-11e9-1104-51987764600f"
+TranscodingStreams = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
